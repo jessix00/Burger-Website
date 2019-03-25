@@ -1,0 +1,11 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-wrapper {
+    padding: 0;
+    height: 100px;
+    background-color: #D60C0C;
+}
