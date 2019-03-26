@@ -2,10 +2,17 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav-wrapper {
-    padding: 0;
-    height: 100px;
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+.navigation {
     background-color: #D60C0C;
+}
+
+.menu-section {
+    background-color: #1E1E1E;
 }
