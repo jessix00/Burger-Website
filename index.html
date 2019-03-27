@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
     <title>Hamburger Website</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
@@ -12,7 +13,7 @@
 
 <body>
     <nav class="navigation grid-x">
-        <h1 class="cell small-8">Happy Hamburgers</h1>
+        <h1 class="logo cell small-8">Happy Hamburgers</h1>
         <ul class="navigation menu align-right cell small-4">
             <li><a href="">Home</a></li>
             <!-- <li><a href="">Menu</a></li>
@@ -25,11 +26,59 @@
 
     <div class="menu-section">
         <h1>Menu</h1>
+        <ul class="accordion" data-accordion>
+            <li class="accordion-item" data-accordion-item>
+                <!-- Accordion tab title -->
+                <a href="#" class="accordion-title">Breakfast</a>
+                <!-- Accordion tab content-->
+                <div class="accordion-content" data-tab-content>
+                </div>
+            </li>
+            <li class="accordion-item is-active" data-accordion-item>
+                <!-- Accordion tab title -->
+                <a href="#" class="accordion-title">Lunch</a>
+                <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                <div class="accordion-content" data-tab-content>
+                    <h2>SIGNATURE BURGERS</h2>
+                    <p>Slide Burgers - Two $3.50 or Four $6.75 The original slide burger served on a 2-1/2 in bun with carmelized onions & pickles.</p>
+                    <p>Pulled Pork Slider - Two for $3.99 Pulled pork slow roasted tender and juicy </p>
+                    <p>Hamburger - Double $3.85 or Triple $4.95 Happy's signature handcrafted burgers, prepared fresh and made daily with custom ground beef, caramelized onions & dill picke slices on steamed bun.</p>
+                    <p>Hot Dog - $3.99 Choice of toppings, raw onions, relish, mustard & ketchup.</p>
+                    <p>Special Coney Dog - $6.99 All-beef dog loose hamburger, chili & onions</p>
+                    <p>Swiss Chicken Slider - Two for $3.99 Crispy chicken topped with swiss & jalapeno kicker</p>
+                    <p>Chili Dog - $4.99 All-beef hot dog topped with world famous chili & raw onions</p>
+                </div>
+            </li>
+
+            <li class="accordion-item" data-accordion-item>
+                <!-- Accordion tab title -->
+                <a href="#" class="accordion-title">Dinner</a>
+                <!-- Accordion tab content.-->
+                <div class="accordion-content" data-tab-content>
+                    <p>Panel 1. Lorem ipsum dolor</p>
+
+                </div>
+            </li>
+        </ul>
     </div>
+
+    <div class="contact-section">
+        <h1>Location</h1>
+        <div class="contact info">
+            <p>1408 N Scottsdale Rd, <br> Scottsdale AZ 85257</p>
+            <p>480-123-4567</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2719.1794733633133!2d-111.92702357151532!3d33.464381915230256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b09676413ab05%3A0x344a5acd0168a408!2sPapago+Plaza+Shopping+Center!5e0!3m2!1sen!2sus!4v1553721383767"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2019 Happy's Burgers</p>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
 </html>
-
-<script src="foundation.min.js"></script>
-<script src="main.js"></script>
