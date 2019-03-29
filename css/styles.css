@@ -17,11 +17,11 @@ body {
 .top-bar ul {
     background-color: #D60C0C;
     font-family: 'Anton', sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .menu .is-active {
-    font-weight: bold;
+    color: #ffffff;
 }
 
 a {
