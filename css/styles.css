@@ -6,9 +6,32 @@ body {
     background-color: #1E1E1E;
 }
 
-.logo {
-    color: #1e1e1e;
-    text-align: left;
+
+/* NAVIGATION */
+
+.top-bar {
+    width: 100%;
+}
+
+.top-bar,
+.top-bar ul {
+    background-color: #D60C0C;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+}
+
+.menu .is-active {
+    font-weight: bold;
+}
+
+a {
+    color: #1E1E1E;
+    font-weight: none;
+}
+
+a:hover,
+a:focus {
+    color: #1E1E1E;
 }
 
 h1 {
@@ -17,13 +40,8 @@ h1 {
     text-align: center;
 }
 
-.navigation,
-.menu {
-    background-color: #D60C0C;
-}
-
 .menu-section {
-    padding: 20px 0;
+    padding-top: 40px;
 }
 
 .menu-section h1 {
