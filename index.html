@@ -13,31 +13,36 @@
 
 <body>
 
-    <div data-sticky-container>
-        <div class="top-bar" data-sticky data-margin-top="0" id="example-menu">
-            <div class="top-bar-left">
-                <ul class="menu">
-                    <li class="menu-text">Happy Burgers</li>
+    <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Happy Burgers</div>
+    </div>
 
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu" data-magellan>
-                    <li><a href="#first">Home</a></li>
-                    <li><a href="#second">Menu</a></li>
-                    <li><a href="#third">Location</a></li>
-                </ul>
-            </div>
+    <div class="top-bar" id="nav-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+        <div class="top-bar-left" data-magellan>
+            <ul class="dropdown menu hide-for-small-only" data-dropdown-menu>
+                <li class="menu-text">Happy Burgers</li>
+
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#first">Menu</a></li>
+                <li><a href="#second">Location</a></li>
+                <li><a href="#third">About</a></li>
+            </ul>
         </div>
     </div>
+
+
     <div class="sections">
-        <section id="first" data-magellan-target="first">
+        <section>
             <div class="hero">
-                <img class="hero-burger" src="img/burger.png" alt="burger">
+                <img class="hero-burger float-center" src="img/burger-small.png" alt="burger">
             </div>
         </section>
 
-        <section id="second" data-magellan-target="second">
+        <section id="first" data-magellan-target="first">
             <div class="menu-section">
                 <h1>Menu</h1>
                 <ul class="accordion" data-accordion>
@@ -55,22 +60,29 @@
                         <!-- Accordion tab title -->
                         <a href="#" class="accordion-title">Lunch</a>
                         <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-                        <div class="accordion-content" data-tab-content>
-                            <h2>SIGNATURE BURGERS</h2>
-                            <h3>Hamburger - Double $3.85 or Triple $4.95</h3>
-                            <p>Happy's signature handcrafted burgers, prepared fresh and made daily with custom ground beef, caramelized onions & dill picke slices on steamed bun.</p>
-                            <h3>Slide Burgers - Two $3.50 or Four $6.75</h3>
-                            </p>The original slide burger served on a 2-1/2 in bun with carmelized onions & pickles.</p>
-                            <h3>Pulled Pork Slider - Two for $3.99</h3>
-                            <p>Pulled pork slow roasted tender and juicy </p>
-                            <h3>Swiss Chicken Slider - Two for $3.99</h3>
-                            <p>Crispy chicken topped with swiss & jalapeno kicker</p>
-                            <h3>Hot Dog - $3.99</h3>
-                            <p>Choice of toppings, raw onions, relish, mustard & ketchup.</p>
-                            <h3>Special Coney Dog - $6.99</h3>
-                            <p>All-beef dog loose hamburger, chili & onions</p>
-                            <h3>Chili Dog - $4.99</h3>
-                            <p> All-beef hot dog topped with world famous chili & raw onions</p>
+                        <div class="accordion-content row" data-tab-content>
+                            <div class="grid-x">
+                                <div class="cell large-6">
+                                    <h2>SIGNATURE BURGERS</h2>
+                                    <h3>Hamburger - Double $3.85 or Triple $4.95</h3>
+                                    <p>Happy's signature handcrafted burgers, prepared fresh and made daily with custom ground beef, caramelized onions & dill picke slices on steamed bun.</p>
+                                    <h3>Slide Burgers - Two $3.50 or Four $6.75</h3>
+                                    </p>The original slide burger served on a 2-1/2 in bun with carmelized onions & pickles.</p>
+                                    <h3>Pulled Pork Slider - Two for $3.99</h3>
+                                    <p>Pulled pork slow roasted tender and juicy </p>
+                                    <h3>Swiss Chicken Slider - Two for $3.99</h3>
+                                    <p>Crispy chicken topped with swiss & jalapeno kicker</p>
+                                </div>
+                                <div class="cell large-6">
+                                    <h2> HOT DOGS</h2>
+                                    <h3>Hot Dog - $3.99</h3>
+                                    <p>Choice of toppings, raw onions, relish, mustard & ketchup.</p>
+                                    <h3>Special Coney Dog - $6.99</h3>
+                                    <p>All-beef dog loose hamburger, chili & onions</p>
+                                    <h3>Chili Dog - $4.99</h3>
+                                    <p> All-beef hot dog topped with world famous chili & raw onions</p>
+                                </div>
+                            </div>
                         </div>
                     </li>
 
@@ -80,14 +92,13 @@
                         <!-- Accordion tab content.-->
                         <div class="accordion-content" data-tab-content>
                             <p>Panel 1. Lorem ipsum dolor</p>
-
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="contact-section" id="third" data-magellan-target="third">
+        <section class="contact-section" id="second" data-magellan-target="second">
             <h1>Location</h1>
             <div class="contact info">
                 <p>1408 N Scottsdale Rd, <br> Scottsdale AZ 85257</p>
