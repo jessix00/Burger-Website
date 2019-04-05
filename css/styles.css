@@ -12,23 +12,6 @@
         width: 100%;
     }
     
-    @media screen and (min-width: 1200px) {
-        .top-bar,
-        .accordion-content {
-            padding-right: 12%;
-            padding-left: 12%;
-        }
-        a,
-        .accordion-title {
-            padding-right: 12%;
-            padding-left: 12%;
-        }
-        /* .social-container {
-            padding-right: 25%;
-            padding-left: 25%;
-        } */
-    }
-    
     .top-bar,
     .top-bar ul {
         background-color: #D60C0C;
@@ -96,10 +79,7 @@
     .hero-burger {
         max-width: 100%;
     }
-    
-    .about-text {
-        background-color: #fff;
-    }
+    /* MENU/ACCORDION SECTION */
     
     .menu-section {
         padding-top: 40px;
@@ -143,9 +123,8 @@
         margin: 20px 0;
     }
     
-    .social-img {
-        max-width: 289px;
-        max-height: 288px;
+    .social-container {
+        padding: 10px 0;
     }
     
     footer {
@@ -154,4 +133,18 @@
         background-color: #D60C0C;
         text-align: center;
         padding-top: 25px;
+    }
+    /* CUSTOM MEDIA QUERIES FOR LARGE */
+    
+    @media screen and (min-width: 1200px) {
+        .top-bar,
+        .accordion-content {
+            padding-right: 12%;
+            padding-left: 12%;
+        }
+        a,
+        .accordion-title {
+            padding-right: 12%;
+            padding-left: 12%;
+        }
     }
