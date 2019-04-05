@@ -12,28 +12,25 @@
 </head>
 
 <body>
-
+    <!-- This will only display on small screens -->
     <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle></button>
         <div class="title-bar-title">HAPPY BURGERS</div>
     </div>
-
+    <!-- This will display on medium and large screens -->
     <div class="top-bar" id="nav-menu" data-animate="hinge-in-from-top hinge-out-from-top">
         <div class="top-bar-left" data-magellan>
             <ul class="dropdown menu hide-for-small-only" data-dropdown-menu>
                 <li class="menu-text">HAPPY BURGERS</li>
-
             </ul>
         </div>
         <div class="top-bar-right">
             <ul class="menu">
                 <li><a href="#first">MENU</a></li>
                 <li><a href="#second">LOCATION</a></li>
-                <!-- <li><a href="#third">ABOUT</a></li> -->
             </ul>
         </div>
     </div>
-
 
     <div class="sections">
         <section>
@@ -79,7 +76,7 @@
                     <li class="accordion-item is-active" data-accordion-item>
                         <!-- Accordion tab title -->
                         <a href="#" class="accordion-title">Lunch</a>
-                        <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                        <!-- Accordion tab content: it will start in the open state due to using the `is-active` state class. -->
                         <div class="accordion-content row" data-tab-content>
                             <div class="grid-x grid-margin-x">
                                 <div class="cell large-6">
@@ -170,23 +167,19 @@
         <section>
             <div class="social-container grid-container">
                 <div class="grid-x align-center">
-                    <div class="cell small-12">
+                    <div class="cell small-6 medium-8 large-12 float-center">
                         <img class="social-img" src="img/social-burger.jpg" alt="Burger on a red basket with fries">
-                        <img class="social-img" src="img/social-burger2.jpg" alt="Burger on a red basket with fries">
-                        <img class="social-img" src="img/social-burger3.jpg" alt="Burger on a red basket with fries">
-                        <img class="social-img" src="img/social-burger4.jpg" alt="Burger on a red basket with fries">
+                        <img class="social-img" src="img/social-burger2.jpg" alt="Burger on a table">
+                        <img class="social-img" src="img/social-burger3.jpg" alt="Burger image">
+                        <img class="social-img" src="img/social-burger4.jpg" alt="Burger on a wood counter">
                     </div>
                 </div>
             </div>
         </section>
-
-
-
         </div>
         <footer>
             <p>Copyright 2019 Happy's Burgers</p>
         </footer>
-
         <script src="js/jquery.js"></script>
         <script src="js/what-input.js"></script>
         <script src="js/foundation.js"></script>
